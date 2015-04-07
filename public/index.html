@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Tutorial Blog Roll</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/libs/require.js" data-main="js/app"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>BackBone Tutorial Blogroll App</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Author</th>
+					<th>Title</th>
+					<th>Url</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td><input class="form-control author-input"></td>
+					<td><input class="form-control title-input"></td>
+					<td><input class="form-control url-input"></td>
+					<td><button class="btn btn-primary add-blog">Add</button></td>
+				</tr>
+			</thead>
+			<tbody class="blog-list">
+
+			</tbody>
+		</table>
+
+	</div>
+	
+
+
+<script type="text/template" class="blog-list-template">
+	<td><span class="author"> <%= author %></span</td>
+	<td><span class="title"> <%= title %></span</td>
+	<td><span class="url"> <%= url %></span</td>
+	<td>
+		<button class="btn btn-warning edit-blog">Edit</button>
+		<button class="btn btn-warning delete-blog">Delete</button>
+		<button class="btn btn-success update-blog" style="display:none;">Update</button>
+		<button class="btn btn-danger cancel" style="display:none;">Cancel</button>
+	</td>
+</script>	
+	
+</body>
+</html>

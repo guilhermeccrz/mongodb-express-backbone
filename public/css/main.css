@@ -1,0 +1,35 @@
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+.col-xs-6 {width:37%;position: relative;}
+
+.col-md-4 a { text-decoration: none;}
+.col-md-4 a:hover  { text-decoration: none!important;}
+.col-md-4 a:hover * { text-decoration: none!important;}
+
+/*shots details*/
+
+.div-transparent {
+	position:relative;
+	margin-top: -60px;
+	background: rgba(0, 0, 0, 0.5)!important;
+	width: 100%;
+	height:60px;
+	max-width: 400px;
+	padding: 12px 10px;
+	overflow: hidden;
+}
+
+.div-transparent * { color: #fff;}
+.div-transparent span { font-size: 26px;}
+.div-transparent .detail-span {float:left; width:60%; line-height: 40px; overflow: hidden; height: 60px;}
+.div-transparent i {font-size:21px; margin-right: 5px;}
+
+.panel-body .player_name { margin-top: 34px; margin-left: 10px; float: left;}
+.panel-body .player_description { display: block; overflow: auto; clear: both;}
+.panel-body .circle-img { border-radius: 84px; max-height: 50px; margin-top: 20px; float:left;}
+
+
+@media screen and (max-width: 500px) {
+	.panel-body .div-transparent .detail-span {width:54%;}
+	.panel-body .div-transparent span { font-size: 20px;}
+}
